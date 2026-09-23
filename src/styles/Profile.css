@@ -1,0 +1,134 @@
+/* Profile Page Styling */
+
+.profile-container {
+  padding: 3rem 1.5rem 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  max-width: 780px;
+  width: 100%;
+  box-shadow: var(--shadow-md);
+}
+
+.profile-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.profile-header h1 {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.02em;
+}
+
+.profile-header p {
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+}
+
+.form-section {
+  margin-bottom: 2rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.form-section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.form-group-full {
+  margin-bottom: 1.25rem;
+}
+
+.currency-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.currency-symbol {
+  position: absolute;
+  left: 1rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  pointer-events: none;
+}
+
+.currency-input {
+  padding-left: 2.25rem !important;
+}
+
+.select-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  font-family: inherit;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.select-input:focus {
+  border-color: var(--primary-color);
+  background-color: #ffffff;
+}
+
+.success-banner {
+  background-color: var(--accent-light);
+  border: 1px solid #b7dfd3;
+  color: var(--primary-color);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.85rem 1.1rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile-submit-btn {
+  width: 100%;
+  padding: 0.85rem;
+  font-size: 1.05rem;
+  margin-top: 1rem;
+}
+
+/* Responsive Grid */
+@media (max-width: 640px) {
+  .profile-card {
+    padding: 1.75rem 1.25rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

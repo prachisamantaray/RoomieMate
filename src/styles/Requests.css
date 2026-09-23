@@ -1,0 +1,198 @@
+/* RoomieMatch Requests Page Styling */
+
+.requests-container {
+  padding: 3rem 1.5rem 5rem;
+}
+
+.requests-header {
+  margin-bottom: 2rem;
+}
+
+.requests-header h1 {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.025em;
+}
+
+.requests-header p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+/* Tab Navigation */
+.requests-tabs {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 2.25rem;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 0.85rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.15s ease;
+}
+
+.tab-btn:hover {
+  color: var(--primary-color);
+}
+
+.tab-btn.active {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+.tab-count-badge {
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.15rem 0.6rem;
+  border-radius: var(--radius-pill);
+  margin-left: 0.4rem;
+}
+
+/* Requests Grid */
+.requests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem;
+}
+
+.request-card {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.request-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.request-user-info h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.request-user-info p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-top: 0.15rem;
+}
+
+.status-badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-pill);
+  text-transform: capitalize;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.status-pending {
+  background-color: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+}
+
+.status-accepted {
+  background-color: var(--accent-light);
+  color: var(--primary-color);
+  border: 1px solid #bce0d5;
+}
+
+.status-rejected {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+
+.request-meta-box {
+  background-color: var(--surface-alt);
+  padding: 0.75rem 0.9rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.request-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.request-actions .btn {
+  flex: 1;
+  padding: 0.6rem;
+  font-size: 0.875rem;
+}
+
+.btn-accept {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.btn-accept:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-reject {
+  background-color: transparent;
+  color: #991b1b;
+  border-color: #fca5a5;
+}
+
+.btn-reject:hover {
+  background-color: #fef2f2;
+}
+
+/* Empty state */
+.requests-empty {
+  text-align: center;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 3.5rem 2rem;
+  max-width: 540px;
+  margin: 2rem auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.requests-empty h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.requests-empty p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  .requests-grid {
+    grid-template-columns: 1fr;
+  }
+}
